@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application météo</title>
+    <script src="weather.js" defer></script>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <div id="Input">
+        <div id="map"></div>
+        <div id="Form">
+            <input type="text", id="cityName">
+			<button type="button" id="weatherButton">afficher</button>
+        </div>
+   	</div>
+	<div id="data"></div>
+</body>
+</html>
